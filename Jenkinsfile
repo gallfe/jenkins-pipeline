@@ -30,7 +30,7 @@ pipeline {
     stage("Build & Push Docker image") {
       steps {
         sh 'docker image build -t $registry:$BUILD_NUMBER .'
-        sh 'docker login -u gallfe -p $DOCKER_PWD'
+        sh 'docker login -u gallfe -p niME6TewLh_'
         sh 'docker image push $registry:$BUILD_NUMBER'
         sh "docker image rm $registry:$BUILD_NUMBER"
       }
