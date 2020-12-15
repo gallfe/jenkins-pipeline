@@ -1,1 +1,4 @@
+gallfe
 niME6TewLh_
+git config --get remote.origin.url
+https://github.com/gallfe/jenkins-pipeline.git
