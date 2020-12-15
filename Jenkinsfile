@@ -4,7 +4,7 @@ pipeline {
     }
     agent {
       docker {
-        image 'gallfe/my-node-docker:1.0'
+        image 'gallfe/my-node-docker:2.0'
         args '-p 3000:3000'
         args '-w /app'
         args '-v /var/run/docker.sock:/var/run/docker.sock'
